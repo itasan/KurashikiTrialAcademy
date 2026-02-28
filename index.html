@@ -1,0 +1,1399 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KURASHIKI TRIAL ACADEMY | 倉敷トライアルアカデミー</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --bg-page: #0c0c0c;
+        --bg-card: #1a1a1a;
+        --bg-elevated: #242424;
+        --accent: #ff3b30;
+        --accent-soft: rgba(255, 59, 48, 0.125);
+        --text-primary: #ffffff;
+        --text-secondary: #8a8a8a;
+        --text-muted: #525252;
+        --border: #2a2a2a;
+        --border-strong: #3a3a3a;
+        --facebook: #1877f2;
+        --px: clamp(20px, 5vw, 48px);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background: var(--bg-page);
+        color: var(--text-primary);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .page {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+
+      /* ===== HEADER ===== */
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 72px;
+        padding: 0 var(--px);
+        background: rgba(12, 12, 12, 0.8);
+      }
+      .header-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        flex-shrink: 0;
+      }
+      .header-logo-mark {
+        width: 36px;
+        height: 36px;
+        background: var(--accent);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .header-logo-mark i {
+        color: #fff;
+        width: 20px;
+        height: 20px;
+      }
+      .header-logo-text {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: var(--text-primary);
+      }
+      .header-nav {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      }
+      .header-nav a {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 2px;
+        /* color: var(--text-secondary); */
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .header-nav a:hover {
+        color: var(--text-primary);
+      }
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 24px;
+        background: var(--accent);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: opacity 0.2s;
+      }
+      .btn-primary:hover {
+        opacity: 0.9;
+      }
+
+      /* ===== HERO ===== */
+      .hero {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        max-height: 640px;
+        min-height: 480px;
+        overflow: hidden;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background: url("./assets/images/hero.jpg") center/cover no-repeat;
+      }
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(12, 12, 12, 0.5),
+          rgba(12, 12, 12, 0.2) 50%,
+          rgba(12, 12, 12, 0.5)
+        );
+      }
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        height: 100%;
+        padding: 80px var(--px) 60px;
+        gap: 20px;
+      }
+      .hero-accent-line {
+        width: 60px;
+        height: 3px;
+        background: var(--accent);
+      }
+      .hero-title {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: clamp(40px, 7vw, 80px);
+        letter-spacing: -2px;
+        line-height: 0.95;
+        color: var(--text-primary);
+        text-align: right;
+      }
+      .hero-subtitle {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: clamp(16px, 2.5vw, 24px);
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: right;
+      }
+      .hero-desc {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.7);
+        text-align: right;
+        max-width: 520px;
+      }
+      .hero-ctas {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      .btn-hero-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 32px;
+        background: var(--accent);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: opacity 0.2s;
+      }
+      .btn-hero-primary:hover {
+        opacity: 0.9;
+      }
+      .btn-hero-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 32px;
+        background: transparent;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: border-color 0.2s;
+      }
+      .btn-hero-secondary:hover {
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+
+      /* ===== INFO BAR ===== */
+      .info-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 28px var(--px);
+        background: var(--bg-card);
+      }
+      .info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+      }
+      .info-item-value {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: -1px;
+        color: var(--text-primary);
+      }
+      .info-item-value.accent {
+        color: var(--accent);
+        font-size: 32px;
+      }
+      .info-item-label {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        letter-spacing: 2px;
+        color: var(--text-muted);
+      }
+      .info-divider {
+        width: 1px;
+        height: 40px;
+        background: var(--border);
+      }
+
+      /* ===== SECTION COMMON ===== */
+      .section-label {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .section-label-line {
+        width: 24px;
+        height: 2px;
+        background: var(--accent);
+      }
+      .section-label-text {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: 2px;
+        color: var(--accent);
+      }
+      .section-title {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: -1px;
+        color: var(--text-primary);
+      }
+      .section-desc {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.8;
+        color: var(--text-secondary);
+      }
+
+      /* ===== ABOUT ===== */
+      .about {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        padding: 80px var(--px);
+        background: var(--bg-page);
+      }
+      .about-image {
+        flex: 0 1 45%;
+        max-width: 480px;
+        aspect-ratio: 7 / 6;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .about-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .about-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1;
+        min-width: 0;
+      }
+      .about-content .section-title {
+        line-height: 1.15;
+      }
+      .about-content .section-desc {
+        font-size: 14px;
+      }
+      .about-features {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .about-feature-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .about-feature-item i {
+        color: var(--accent);
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+      }
+      .about-feature-item span {
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--text-primary);
+      }
+
+      /* ===== VISION ===== */
+      .vision {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding: 80px var(--px);
+        background: var(--bg-page);
+      }
+      .vision-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+      .vision-title {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: clamp(28px, 4vw, 44px);
+        letter-spacing: -1px;
+        line-height: 1.15;
+        color: var(--text-primary);
+        text-align: center;
+      }
+      .vision-desc {
+        font-size: 15px;
+        line-height: 1.8;
+        color: var(--text-secondary);
+        text-align: center;
+        max-width: 640px;
+      }
+      .vision-photo {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 2.2 / 1;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .vision-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .vision-photo-caption {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        background: rgba(12, 12, 12, 0.8);
+        border-radius: 4px;
+      }
+      .vision-photo-caption i {
+        color: var(--accent);
+        width: 14px;
+        height: 14px;
+      }
+      .vision-photo-caption span {
+        font-weight: 600;
+        font-size: 12px;
+        color: var(--text-primary);
+      }
+      .goal-steps {
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+      }
+      .goal-step {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 28px 16px;
+        background: var(--bg-card);
+        border-top: 3px solid var(--accent);
+        min-width: 0;
+      }
+      .goal-step-num {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: -2px;
+        color: rgba(255, 59, 48, 0.25);
+      }
+      .goal-step-title {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--text-primary);
+        text-align: center;
+      }
+      .goal-step-desc {
+        font-size: 12px;
+        line-height: 1.7;
+        color: var(--text-secondary);
+        text-align: center;
+      }
+      .goal-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        flex-shrink: 0;
+      }
+      .goal-arrow i {
+        color: var(--accent);
+        width: 20px;
+        height: 20px;
+      }
+
+      .goal-roadmap-label {
+        display: none;
+        width: 100%;
+      }
+
+      /* ===== COACHES ===== */
+      .coaches {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 80px var(--px);
+        background: var(--bg-card);
+      }
+      .coaches-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+      .coaches-grid {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+      }
+      .coach-card {
+        flex: 1;
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--bg-elevated);
+        min-width: 0;
+      }
+      .coach-card-image {
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+      }
+      .coach-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .coach-card-content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .coach-role {
+        font-weight: 700;
+        font-size: 9px;
+        letter-spacing: 1px;
+        color: var(--accent);
+      }
+      .coach-name {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: -0.5px;
+        color: var(--text-primary);
+      }
+      .coach-desc {
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--text-secondary);
+      }
+
+      /* ===== DETAILS ===== */
+      .details {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding: 80px var(--px);
+        background: var(--bg-page);
+      }
+      .details-header {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .details-grid {
+        display: flex;
+        gap: 24px;
+        width: 100%;
+      }
+      .detail-card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 28px;
+        background: var(--bg-card);
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        min-width: 0;
+      }
+      .detail-card-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .detail-icon-wrap {
+        width: 48px;
+        height: 48px;
+        background: var(--accent-soft);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .detail-icon-wrap i {
+        color: var(--accent);
+        width: 24px;
+        height: 24px;
+      }
+      .detail-title {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: -0.5px;
+        line-height: 1.3;
+        color: var(--text-primary);
+      }
+      .detail-desc {
+        font-size: 13px;
+        line-height: 1.7;
+        color: var(--text-primary);
+      }
+
+      /* ===== ACCESS ===== */
+      .access {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 80px var(--px);
+        background: var(--bg-card);
+      }
+      .access-header {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .access-body {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+      }
+      .access-map {
+        flex: 0 1 55%;
+        aspect-ratio: 16 / 10;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+      }
+      .access-map iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        filter: grayscale(0.5) invert(0.92) contrast(0.9) hue-rotate(180deg);
+      }
+      .access-info {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        flex: 1;
+        min-width: 0;
+      }
+      .access-block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .access-block-label {
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: 2px;
+        color: var(--accent);
+      }
+      .access-venue-name {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: -0.5px;
+        color: var(--text-primary);
+      }
+      .access-venue-addr {
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--text-secondary);
+      }
+      .access-facility-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .access-facility-row i {
+        color: var(--text-primary);
+        width: 16px;
+        height: 16px;
+      }
+      .access-facility-row span {
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--text-primary);
+      }
+      .access-note {
+        font-size: 13px;
+        line-height: 1.7;
+        color: var(--text-primary);
+      }
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        color: var(--text-primary);
+        font-weight: 500;
+        font-size: 13px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: border-color 0.2s;
+        width: fit-content;
+      }
+      .btn-outline:hover {
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+      .btn-outline i {
+        width: 16px;
+        height: 16px;
+      }
+
+      /* ===== CTA ===== */
+      .cta-section {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 2.5 / 1;
+        min-height: 360px;
+        max-height: 480px;
+        overflow: hidden;
+      }
+      .cta-bg {
+        position: absolute;
+        inset: 0;
+        background: url("./assets/images/contact.jpg") center/cover no-repeat;
+      }
+      .cta-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(12, 12, 12, 0.94),
+          rgba(12, 12, 12, 0.25) 50%,
+          rgba(12, 12, 12, 0.94)
+        );
+      }
+      .cta-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 40px var(--px);
+        gap: 24px;
+      }
+      .cta-accent-line {
+        width: 60px;
+        height: 3px;
+        background: var(--accent);
+      }
+      .cta-title {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: clamp(26px, 4vw, 44px);
+        letter-spacing: -1px;
+        color: var(--text-primary);
+        text-align: center;
+      }
+      .cta-subtitle {
+        font-size: 15px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+      }
+      .cta-buttons {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .btn-cta-large {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 36px;
+        border: none;
+        border-radius: 4px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        transition: opacity 0.2s;
+      }
+      .btn-cta-large:hover {
+        opacity: 0.9;
+      }
+      .btn-cta-large.red {
+        background: var(--accent);
+      }
+      .btn-cta-large.facebook {
+        background: var(--facebook);
+      }
+
+      /* ===== FOOTER ===== */
+      .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 48px var(--px) 32px;
+        background: var(--bg-page);
+        border-top: 1px solid var(--border);
+      }
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+      }
+      .footer-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        flex: 1;
+        max-width: 320px;
+      }
+      .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .footer-logo-mark {
+        width: 28px;
+        height: 28px;
+        background: var(--accent);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .footer-logo-mark i {
+        color: #fff;
+        width: 16px;
+        height: 16px;
+      }
+      .footer-logo-text {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 2px;
+        color: var(--text-primary);
+      }
+      .footer-tagline {
+        font-size: 12px;
+        line-height: 1.6;
+        color: var(--text-muted);
+      }
+      .footer-nav-col {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .footer-nav-title {
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: 2px;
+        color: var(--text-primary);
+      }
+      .footer-nav-col a {
+        font-size: 13px;
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .footer-nav-col a:hover {
+        color: var(--text-primary);
+      }
+      .footer-divider {
+        width: 100%;
+        height: 1px;
+        background: var(--border);
+      }
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .footer-copy {
+        font-size: 12px;
+        color: var(--text-muted);
+      }
+      .footer-socials {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      }
+      .footer-socials a {
+        color: var(--text-muted);
+        transition: color 0.2s;
+      }
+      .footer-socials a:hover {
+        color: var(--text-primary);
+      }
+      .footer-socials i {
+        width: 18px;
+        height: 18px;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 768px) {
+        .header {
+          height: 60px;
+        }
+        .header-logo-text {
+          font-size: 13px;
+          letter-spacing: 1px;
+        }
+        .header-nav {
+          gap: 12px;
+        }
+        .header-nav {
+          display: none;
+        }
+        .hero {
+          min-height: 420px;
+          max-height: none;
+          aspect-ratio: auto;
+        }
+        .hero-content {
+          align-items: center;
+          padding-top: 80px;
+        }
+        .hero-title {
+          text-align: center;
+        }
+        .hero-subtitle {
+          text-align: center;
+        }
+        .hero-desc {
+          text-align: center;
+          max-width: none;
+          font-size: 13px;
+        }
+        .hero-desc br {
+          display: none;
+        }
+        .hero-accent-line {
+          display: none;
+        }
+        .hero-ctas {
+          justify-content: center;
+          width: 100%;
+        }
+        .btn-hero-primary,
+        .btn-hero-secondary {
+          width: 100%;
+          justify-content: center;
+        }
+        .info-bar {
+          flex-direction: column;
+          align-items: stretch;
+          padding: 0;
+        }
+        .info-divider {
+          display: none;
+        }
+        .info-item {
+          flex-direction: row;
+          padding: 14px var(--px);
+          justify-content: space-between;
+          border-bottom: 1px solid var(--border);
+        }
+        .info-item:last-child {
+          border-bottom: none;
+        }
+        .info-item-value {
+          font-size: 18px;
+        }
+        .info-item-value.accent {
+          font-size: 22px;
+        }
+        .about {
+          flex-direction: column;
+          gap: 28px;
+        }
+        .about-image {
+          flex: none;
+          width: 100%;
+          max-width: none;
+          aspect-ratio: 16 / 9;
+        }
+        .about-content .section-title {
+          font-size: 26px;
+        }
+        .vision-photo {
+          aspect-ratio: 16 / 9;
+        }
+        .goal-roadmap-label {
+          display: block;
+          margin-bottom: -24px;
+        }
+        .goal-steps {
+          flex-direction: column;
+        }
+        .goal-arrow {
+          width: 100%;
+          height: 32px;
+        }
+        .goal-arrow svg {
+          transform: rotate(90deg);
+        }
+        .section-title {
+          font-size: 26px;
+        }
+        .coaches-grid {
+          flex-direction: column;
+          gap: 16px;
+        }
+        .details-grid {
+          flex-direction: column;
+          gap: 16px;
+        }
+        .access-body {
+          flex-direction: column;
+        }
+        .access-map {
+          flex: none;
+          width: 100%;
+          aspect-ratio: 16 / 10;
+        }
+        .cta-section {
+          min-height: 340px;
+          max-height: none;
+          aspect-ratio: auto;
+        }
+        .cta-buttons {
+          flex-direction: column;
+          width: 100%;
+        }
+        .btn-cta-large {
+          width: 100%;
+          justify-content: center;
+        }
+        .footer-top {
+          flex-direction: column;
+          gap: 24px;
+        }
+        .footer-brand {
+          max-width: none;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          gap: 12px;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- HEADER -->
+      <header class="header">
+        <a href="#" class="header-logo">
+          <span class="header-logo-text">KURASHIKI TRIAL ACADEMY</span>
+        </a>
+        <nav class="header-nav">
+          <a href="#about">ABOUT</a>
+          <a href="#coaches">COACHES</a>
+          <a href="#details">DETAILS</a>
+          <a href="#access">ACCESS</a>
+          <a href="#apply" class="btn-primary">参加を申し込む</a>
+        </nav>
+      </header>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-accent-line"></div>
+          <h1 class="hero-title">RIDE BEYOND<br />LIMITS</h1>
+          <p class="hero-subtitle">自転車で、限界の先へ。</p>
+          <p class="hero-desc">
+            倉敷トライアルアカデミーは、自転車トライアル競技を通じて<br />挑戦する楽しさと達成感を体験できるスポーツ教室です。<br />小学生から高校生まで、初心者大歓迎。
+          </p>
+          <div class="hero-ctas">
+            <a href="#apply" class="btn-hero-primary"
+              >参加を申し込む
+              <i data-lucide="arrow-right" style="width: 18px; height: 18px"></i
+            ></a>
+            <a href="#about" class="btn-hero-secondary"
+              >詳しく見る
+              <i
+                data-lucide="chevron-down"
+                style="width: 18px; height: 18px"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- INFO BAR -->
+      <section class="info-bar">
+        <div class="info-item">
+          <span class="info-item-value">毎月第3日曜</span>
+          <span class="info-item-label">SCHEDULE</span>
+        </div>
+        <div class="info-divider"></div>
+        <div class="info-item">
+          <span class="info-item-value">10:00–15:00</span>
+          <span class="info-item-label">TIME</span>
+        </div>
+        <div class="info-divider"></div>
+        <div class="info-item">
+          <span class="info-item-value accent">¥1,000</span>
+          <span class="info-item-label">FEE</span>
+        </div>
+        <div class="info-divider"></div>
+        <div class="info-item">
+          <span class="info-item-value">初心者OK</span>
+          <span class="info-item-label">LEVEL</span>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about">
+        <div class="about-image">
+          <img src="./assets/images/about.jpg" alt="自転車トライアル" />
+        </div>
+        <div class="about-content">
+          <div class="section-label">
+            <div class="section-label-line"></div>
+            <span class="section-label-text">ABOUT THE ACADEMY</span>
+          </div>
+          <h2 class="section-title">倉敷トライアル<br />アカデミーについて</h2>
+          <p class="section-desc" style="font-size: 15px; max-width: 500px">
+            倉敷トライアルアカデミーは、自転車トライアル競技を通じて子どもたちの「挑戦する力」を育むスポーツ教室です。<br /><br />自転車トライアルとは、岩や丸太などの障害物を足をつかずに乗り越えていく自転車競技。バランス感覚・判断力・集中力が鍛えられ、成功した時の達成感は格別です。<br /><br />国内トップライダーを世界戦に送り出した実績を持つコーチ陣が、初心者から経験者まで一人ひとりのレベルに合わせて丁寧に指導。自転車に乗れれば誰でも始められます。
+          </p>
+          <div class="about-features">
+            <div class="about-feature-item">
+              <i data-lucide="circle-check"></i
+              ><span>自転車に乗れれば誰でも参加OK</span>
+            </div>
+            <div class="about-feature-item">
+              <i data-lucide="circle-check"></i
+              ><span>国内トップレベルのコーチが指導</span>
+            </div>
+            <div class="about-feature-item">
+              <i data-lucide="circle-check"></i
+              ><span>競技用自転車のレンタルあり</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VISION & GOAL -->
+      <section class="vision">
+        <div class="vision-header">
+          <div class="section-label">
+            <div class="section-label-line"></div>
+            <span class="section-label-text">VISION & GOAL</span>
+          </div>
+          <h2 class="vision-title">世界で戦える選手を、<br />この地域から。</h2>
+          <p class="vision-desc">
+            中学校の部活動が地域クラブへ移行される今、従来の部活動の枠組みに囚われることなく様々なスポーツに取り組めるチャンスでもあります。
+            世界レベルで活躍する選手を育成してきた経験とノウハウを次の世代へ繋げていく。それが倉敷トライアルアカデミーの使命です。
+          </p>
+        </div>
+
+        <div class="vision-photo">
+          <img src="./assets/images/world.jpg" alt="世界大会での優勝" />
+          <div class="vision-photo-caption">
+            <i data-lucide="trophy"></i>
+            <span>LUNAパークで育った選手が世界1位を獲得</span>
+          </div>
+        </div>
+
+        <div class="goal-roadmap-label">
+          <div class="section-label">
+            <div class="section-label-line"></div>
+            <span class="section-label-text">ROADMAP</span>
+          </div>
+        </div>
+        <div class="goal-steps">
+          <div class="goal-step">
+            <span class="goal-step-num">01</span>
+            <h3 class="goal-step-title">国内大会上位入賞</h3>
+            <p class="goal-step-desc">
+              基礎スキルを磨き、国内大会で上位入賞を目指す。確かな技術と競技力の土台を築く。
+            </p>
+          </div>
+          <div class="goal-arrow"><i data-lucide="chevron-right"></i></div>
+          <div class="goal-step">
+            <span class="goal-step-num">02</span>
+            <h3 class="goal-step-title">World Youth Games<br />優勝</h3>
+            <p class="goal-step-desc">
+              ユース世代の世界大会で頂点を掴む。国際舞台での経験が選手を大きく成長させる。
+            </p>
+          </div>
+          <div class="goal-arrow"><i data-lucide="chevron-right"></i></div>
+          <div class="goal-step">
+            <span class="goal-step-num">03</span>
+            <h3 class="goal-step-title">World Championships<br />入賞</h3>
+            <p class="goal-step-desc">
+              世界選手権での入賞を目指す。この地域から世界のトップへ挑戦する選手を輩出する。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COACHES -->
+      <section id="coaches" class="coaches">
+        <div class="coaches-header">
+          <div class="section-label">
+            <div class="section-label-line"></div>
+            <span class="section-label-text">COACHES & STAFF</span>
+          </div>
+          <h2 class="section-title">経験豊富なスタッフ陣</h2>
+          <p class="section-desc" style="text-align: center">
+            国内トップライダーの育成実績を持つコーチが、一人ひとりのレベルに合わせて丁寧に指導します
+          </p>
+        </div>
+        <div class="coaches-grid">
+          <div class="coach-card">
+            <div class="coach-card-image">
+              <img src="./assets/images/yokota.jpg" alt="横田 知宏" />
+            </div>
+            <div class="coach-card-content">
+              <span class="coach-role">HEAD COACH</span>
+              <h3 class="coach-name">横田 知宏</h3>
+              <p class="coach-desc">
+                国内トップライダーを育成し、世界戦でも活躍する選手を輩出した実績を持つ。的確な指導で初心者から上級者まで導く。
+              </p>
+            </div>
+          </div>
+          <div class="coach-card">
+            <div class="coach-card-image">
+              <img src="./assets/images/hamano.jpg" alt="濱野 大樹" />
+            </div>
+            <div class="coach-card-content">
+              <span class="coach-role">COACH</span>
+              <h3 class="coach-name">濱野 大樹</h3>
+              <p class="coach-desc">
+                参加者一人ひとりの習熟度に寄り添い、楽しみながら上達できる指導を実践。子どもたちの挑戦を全力でサポート。
+              </p>
+            </div>
+          </div>
+          <div class="coach-card">
+            <div class="coach-card-image">
+              <img src="./assets/images/namba.jpg" alt="難波 靖彦" />
+            </div>
+            <div class="coach-card-content">
+              <span class="coach-role">COURSE CONSTRUCTOR</span>
+              <h3 class="coach-name">難波 靖彦</h3>
+              <p class="coach-desc">
+                セクション（コース）の設計・構築を担当。参加者のレベルに合わせた最適な練習環境を卓越した技術で作り上げる。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DETAILS -->
+      <section id="details" class="details">
+        <div class="details-header">
+          <div class="section-label">
+            <div class="section-label-line"></div>
+            <span class="section-label-text">DETAILS</span>
+          </div>
+          <h2 class="section-title">参加要項</h2>
+        </div>
+        <div class="details-grid">
+          <div class="detail-card">
+            <div class="detail-card-head">
+              <div class="detail-icon-wrap"><i data-lucide="map-pin"></i></div>
+              <h3 class="detail-title">会場</h3>
+            </div>
+            <p class="detail-desc">
+              倉敷市福田 LUNAパーク<br />トイレ・駐車場完備。倉敷・水島エリアからアクセス良好。
+            </p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-card-head">
+              <div class="detail-icon-wrap"><i data-lucide="shield"></i></div>
+              <h3 class="detail-title">持ち物・注意事項</h3>
+            </div>
+            <p class="detail-desc">
+              ヘルメット・グローブは各自持参。競技用自転車はレンタルあり（数に限りあり）。スポーツ保険は未加入のため、各自でご対応ください。
+            </p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-card-head">
+              <div class="detail-icon-wrap"><i data-lucide="user"></i></div>
+              <h3 class="detail-title">対象・参加条件</h3>
+            </div>
+            <p class="detail-desc">
+              倉敷・水島市ほか近隣地域の小学生〜高校生。初心者大歓迎。中学生以下は保護者同伴が必要です。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACCESS -->
+      <section id="access" class="access">
+        <div class="access-header">
+          <div class="section-label">
+            <div class="section-label-line"></div>
+            <span class="section-label-text">ACCESS</span>
+          </div>
+          <h2 class="section-title">アクセス</h2>
+        </div>
+        <div class="access-body">
+          <div class="access-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8602.97241668952!2d133.74739028878528!3d34.55301142376691!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3551590b1855c6df%3A0x86b0d0e51d40e669!2z44Or44OK44OR44O844Kv!5e0!3m2!1sja!2sjp!4v1772266558144!5m2!1sja!2sjp"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="access-info">
+            <div class="access-block">
+              <span class="access-block-label">VENUE</span>
+              <h3 class="access-venue-name">LUNAパーク</h3>
+              <p class="access-venue-addr">岡山県倉敷市福田町</p>
+            </div>
+            <div class="access-block">
+              <span class="access-block-label">FACILITIES</span>
+              <div class="access-facility-row">
+                <i data-lucide="car"></i><span>駐車場あり</span>
+              </div>
+              <div class="access-facility-row">
+                <i data-lucide="bath"></i><span>トイレあり</span>
+              </div>
+            </div>
+            <div class="access-block">
+              <span class="access-block-label">NOTE</span>
+              <p class="access-note">
+                見学は随時可能ですが、私有地につき事前にご連絡の上お越しください。<br />
+                開催日は毎月第3日曜ですが、月によって変動する場合があります。<br />最新情報はFacebookグループでご確認ください。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="apply" class="cta-section">
+        <div class="cta-bg"></div>
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+          <div class="cta-accent-line"></div>
+          <h2 class="cta-title">まずは、やってみよう。</h2>
+          <p class="cta-subtitle">
+            自転車に乗れれば誰でも参加OK。<br />毎月第3日曜 10:00〜15:00 /
+            参加費 ¥1,000
+          </p>
+          <div class="cta-buttons">
+            <a href="#" class="btn-cta-large red"
+              >Googleフォームで申込
+              <i data-lucide="arrow-right" style="width: 20px; height: 20px"></i
+            ></a>
+            <a href="#" class="btn-cta-large facebook">Facebookで連絡</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="footer-logo-text">KURASHIKI TRIAL ACADEMY</span>
+            </div>
+            <p class="footer-tagline">
+              自転車トライアルを通じて、<br />子どもたちの挑戦する力を育む。
+            </p>
+          </div>
+          <div class="footer-nav-col">
+            <span class="footer-nav-title">INFO</span>
+            <a href="#">毎月第3日曜 10:00–15:00</a>
+            <a href="#">LUNAパーク（倉敷市福田町）</a>
+            <a href="#">参加費 ¥1,000</a>
+          </div>
+          <div class="footer-nav-col">
+            <span class="footer-nav-title">CONTACT</span>
+            <a href="#">Googleフォームで申込</a>
+            <a href="#">Facebookグループ</a>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <span class="footer-copy"
+            >&copy; 2026 Kurashiki Trial Academy. All rights reserved.</span
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      lucide.createIcons()
+    </script>
+  </body>
+</html>
