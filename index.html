@@ -27,7 +27,7 @@
         --accent: #ff3b30;
         --accent-soft: rgba(255, 59, 48, 0.125);
         --text-primary: #ffffff;
-        --text-secondary: #8a8a8a;
+        --text-secondary: #c8c8c8;
         --text-muted: #525252;
         --border: #2a2a2a;
         --border-strong: #3a3a3a;
@@ -181,14 +181,14 @@
         font-weight: 500;
         font-size: clamp(16px, 2.5vw, 24px);
         letter-spacing: 1px;
-        color: rgba(255, 255, 255, 0.8);
+        color: #ffffff;
         text-align: right;
       }
       .hero-desc {
         font-size: 15px;
         font-weight: 400;
         line-height: 1.7;
-        color: rgba(255, 255, 255, 0.7);
+        color: #ffffff;
         text-align: right;
         max-width: 520px;
       }
@@ -268,7 +268,7 @@
         font-weight: 500;
         font-size: 10px;
         letter-spacing: 2px;
-        color: var(--text-muted);
+        color: var(--text-secondary);
       }
       .info-divider {
         width: 1px;
@@ -845,7 +845,7 @@
       .footer-tagline {
         font-size: 12px;
         line-height: 1.6;
-        color: var(--text-muted);
+        color: var(--text-secondary);
       }
       .footer-nav-col {
         display: flex;
@@ -918,6 +918,17 @@
           max-height: none;
           aspect-ratio: auto;
         }
+        .hero-bg {
+          background-position: left center;
+        }
+        .hero-overlay {
+          background: linear-gradient(
+            to bottom,
+            rgba(12, 12, 12, 0.7),
+            rgba(12, 12, 12, 0.5) 50%,
+            rgba(12, 12, 12, 0.7)
+          );
+        }
         .hero-content {
           align-items: center;
           padding-top: 80px;
@@ -981,6 +992,9 @@
           max-width: none;
           aspect-ratio: 16 / 9;
         }
+        .about-image img {
+          object-position: top center;
+        }
         .about-content .section-title {
           font-size: 26px;
         }
@@ -1024,6 +1038,9 @@
           min-height: 340px;
           max-height: none;
           aspect-ratio: auto;
+        }
+        .cta-bg {
+          background-position: right center;
         }
         .cta-buttons {
           flex-direction: column;
