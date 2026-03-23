@@ -1,0 +1,2385 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "o1eHf",
+      "x": 0,
+      "y": 0,
+      "name": "Sports Academy Landing Page",
+      "width": 1440,
+      "fill": "#0C0C0C",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "UCvhU",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#0C0C0CCC",
+          "padding": [
+            0,
+            60
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "18GCi",
+              "name": "logoArea",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "2Slfs",
+                  "name": "logoMark",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#FF3B30",
+                  "cornerRadius": 4,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "B9aCx",
+                      "name": "logoIcon",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "zap",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ZyfbN",
+                  "name": "logoText",
+                  "fill": "#FFFFFF",
+                  "content": "KURASHIKI TRIAL ACADEMY",
+                  "fontFamily": "Sora",
+                  "fontSize": 18,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wz8XI",
+              "name": "navLinks",
+              "gap": 40,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tWZEf",
+                  "name": "nav1",
+                  "fill": "#8A8A8A",
+                  "content": "ABOUT",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "QhOyR",
+                  "name": "nav2",
+                  "fill": "#8A8A8A",
+                  "content": "COACHES",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "XqUsv",
+                  "name": "nav3",
+                  "fill": "#8A8A8A",
+                  "content": "DETAILS",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "rbNia",
+                  "name": "nav4",
+                  "fill": "#8A8A8A",
+                  "content": "ACCESS",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "HysCM",
+                  "name": "ctaBtn",
+                  "fill": "#FF3B30",
+                  "cornerRadius": 4,
+                  "gap": 8,
+                  "padding": [
+                    12,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Z1amM",
+                      "name": "ctaBtnText",
+                      "fill": "#FFFFFF",
+                      "content": "参加を申し込む",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "6b9bm",
+          "name": "Hero Section",
+          "clip": true,
+          "width": "fill_container",
+          "height": 800,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dCj3w",
+              "x": 0,
+              "y": 0,
+              "name": "Hero BG Image",
+              "metadata": {
+                "type": "unsplash",
+                "username": "nikita_pishchugin",
+                "link": "https://unsplash.com/@nikita_pishchugin",
+                "author": "Nikita Pishchugin"
+              },
+              "width": 1440,
+              "height": 800,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1770057021927-420f2d31cd1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIyNDY1MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "5ysYI",
+              "x": 0,
+              "y": 0,
+              "name": "Hero Overlay",
+              "width": 1440,
+              "height": 800,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#0C0C0CE6",
+                    "position": 0
+                  },
+                  {
+                    "color": "#0C0C0C99",
+                    "position": 0.5
+                  },
+                  {
+                    "color": "#0C0C0CE6",
+                    "position": 1
+                  }
+                ]
+              }
+            },
+            {
+              "type": "frame",
+              "id": "f9gZS",
+              "x": 0,
+              "y": 0,
+              "name": "Hero Content",
+              "width": 1440,
+              "height": 800,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                200,
+                120,
+                80,
+                120
+              ],
+              "justifyContent": "center",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "jAiro",
+                  "name": "accentLine",
+                  "fill": "#FF3B30",
+                  "width": 60,
+                  "height": 3
+                },
+                {
+                  "type": "text",
+                  "id": "wJSj3",
+                  "name": "heroTitle",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": 900,
+                  "content": "RIDE BEYOND\nLIMITS",
+                  "lineHeight": 0.95,
+                  "textAlign": "right",
+                  "fontFamily": "Sora",
+                  "fontSize": 96,
+                  "fontWeight": "700",
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "text",
+                  "id": "GPcKp",
+                  "name": "heroSub",
+                  "fill": "#FFFFFFCC",
+                  "content": "自転車で、限界の先へ。",
+                  "textAlign": "right",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "vjHxc",
+                  "name": "heroDesc",
+                  "fill": "#8A8A8A",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "倉敷トライアルアカデミーは、自転車トライアル競技を通じて\n挑戦する楽しさと達成感を体験できるスポーツ教室です。\n小学生から高校生まで、初心者大歓迎。",
+                  "lineHeight": 1.7,
+                  "textAlign": "right",
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                },
+                {
+                  "type": "frame",
+                  "id": "JhQNF",
+                  "name": "heroCtas",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "J92ky",
+                      "name": "primaryCta",
+                      "fill": "#FF3B30",
+                      "cornerRadius": 4,
+                      "gap": 10,
+                      "padding": [
+                        18,
+                        40
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "O5uQy",
+                          "name": "primaryCtaText",
+                          "fill": "#FFFFFF",
+                          "content": "参加を申し込む",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "jeNrk",
+                          "name": "primaryCtaIcon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "arrow-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fHKOa",
+                      "name": "secondaryCta",
+                      "fill": "transparent",
+                      "cornerRadius": 4,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#FFFFFF33"
+                      },
+                      "gap": 10,
+                      "padding": [
+                        18,
+                        40
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Jku28",
+                          "name": "secondaryCtaText",
+                          "fill": "#FFFFFF",
+                          "content": "詳しく見る",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "NLJvW",
+                          "name": "secondaryCtaIcon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "chevron-down",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "uX1JA",
+          "name": "Stats Bar",
+          "width": "fill_container",
+          "height": 120,
+          "fill": "#1A1A1A",
+          "padding": [
+            0,
+            120
+          ],
+          "justifyContent": "space_around",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "R4d13",
+              "name": "stat1",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "heoe1",
+                  "name": "stat1Num",
+                  "fill": "#FFFFFF",
+                  "content": "毎月第3日曜",
+                  "fontFamily": "Sora",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                  "letterSpacing": -1.5
+                },
+                {
+                  "type": "text",
+                  "id": "Kq1mo",
+                  "name": "stat1Label",
+                  "fill": "#525252",
+                  "content": "SCHEDULE",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "dvJo8",
+              "name": "divider1",
+              "fill": "#2A2A2A",
+              "width": 1,
+              "height": 48
+            },
+            {
+              "type": "frame",
+              "id": "5wO1r",
+              "name": "stat2",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iiRKW",
+                  "name": "stat2Num",
+                  "fill": "#FFFFFF",
+                  "content": "10:00–15:00",
+                  "fontFamily": "Sora",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                  "letterSpacing": -1.5
+                },
+                {
+                  "type": "text",
+                  "id": "kAoFA",
+                  "name": "stat2Label",
+                  "fill": "#525252",
+                  "content": "TIME",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "x7APs",
+              "name": "divider2",
+              "fill": "#2A2A2A",
+              "width": 1,
+              "height": 48
+            },
+            {
+              "type": "frame",
+              "id": "E91sy",
+              "name": "stat3",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g1PGL",
+                  "name": "stat3Num",
+                  "fill": "#FF3B30",
+                  "content": "¥1,000",
+                  "fontFamily": "Sora",
+                  "fontSize": 36,
+                  "fontWeight": "700",
+                  "letterSpacing": -1.5
+                },
+                {
+                  "type": "text",
+                  "id": "YQd05",
+                  "name": "stat3Label",
+                  "fill": "#525252",
+                  "content": "FEE",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "1POiJ",
+              "name": "divider3",
+              "fill": "#2A2A2A",
+              "width": 1,
+              "height": 48
+            },
+            {
+              "type": "frame",
+              "id": "HDEvx",
+              "name": "stat4",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "U9K3I",
+                  "name": "stat4Num",
+                  "fill": "#FFFFFF",
+                  "content": "初心者OK",
+                  "fontFamily": "Sora",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                  "letterSpacing": -1.5
+                },
+                {
+                  "type": "text",
+                  "id": "5Z0S6",
+                  "name": "stat4Label",
+                  "fill": "#525252",
+                  "content": "LEVEL",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "3u4Rk",
+          "name": "About Section",
+          "width": "fill_container",
+          "fill": "#0C0C0C",
+          "gap": 80,
+          "padding": [
+            100,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "HGZMs",
+              "name": "About Image",
+              "metadata": {
+                "type": "unsplash",
+                "username": "brett_jordan",
+                "link": "https://unsplash.com/@brett_jordan",
+                "author": "Brett Jordan"
+              },
+              "clip": true,
+              "width": 560,
+              "height": 480,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1772246534418.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 8
+            },
+            {
+              "type": "frame",
+              "id": "6xhBC",
+              "name": "About Content",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lHobn",
+                  "name": "aboutLabel",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "oEd9W",
+                      "name": "aboutAccent",
+                      "fill": "#FF3B30",
+                      "width": 24,
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "QaVIT",
+                      "name": "aboutLabelText",
+                      "fill": "#FF3B30",
+                      "content": "ABOUT THE ACADEMY",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "eyxXH",
+                  "name": "aboutTitle",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": 500,
+                  "content": "倉敷トライアル\nアカデミーについて",
+                  "lineHeight": 1.15,
+                  "fontFamily": "Sora",
+                  "fontSize": 42,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "oTZyH",
+                  "name": "aboutDesc",
+                  "fill": "#8A8A8A",
+                  "textGrowth": "fixed-width",
+                  "width": 500,
+                  "content": "倉敷トライアルアカデミーは、自転車トライアル競技を通じて子どもたちの「挑戦する力」を育むスポーツ教室です。\n\n自転車トライアルとは、岩や丸太などの障害物を足をつかずに乗り越えていく自転車競技。バランス感覚・判断力・集中力が鍛えられ、成功した時の達成感は格別です。\n\n国内トップライダーを世界戦に送り出した実績を持つコーチ陣が、初心者から経験者まで一人ひとりのレベルに合わせて丁寧に指導。自転車に乗れれば誰でも始められます。",
+                  "lineHeight": 1.8,
+                  "fontFamily": "Inter",
+                  "fontSize": 15
+                },
+                {
+                  "type": "frame",
+                  "id": "P7edl",
+                  "name": "aboutFeatures",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nGKmH",
+                      "name": "feat1",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "tQJbU",
+                          "name": "feat1Icon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "check-circle",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FF3B30"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vFm2D",
+                          "name": "feat1Text",
+                          "fill": "#FFFFFF",
+                          "content": "自転車に乗れれば誰でも参加OK",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aIey5",
+                      "name": "feat2",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "JubOi",
+                          "name": "feat2Icon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "check-circle",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FF3B30"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ORUyh",
+                          "name": "feat2Text",
+                          "fill": "#FFFFFF",
+                          "content": "国内トップレベルのコーチが指導",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HCtlQ",
+                      "name": "feat3",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "kAg0U",
+                          "name": "feat3Icon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "check-circle",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FF3B30"
+                        },
+                        {
+                          "type": "text",
+                          "id": "q58js",
+                          "name": "feat3Text",
+                          "fill": "#FFFFFF",
+                          "content": "競技用自転車のレンタルあり",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fGyGT",
+          "name": "Vision Section",
+          "width": "fill_container",
+          "fill": "#0C0C0C",
+          "layout": "vertical",
+          "gap": 64,
+          "padding": [
+            100,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "pSvvR",
+              "name": "visionTop",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "6JhaM",
+                  "name": "visionLabelRow",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "d8u8Q",
+                      "name": "visionAccent",
+                      "fill": "#FF3B30",
+                      "width": 24,
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "KL01x",
+                      "name": "visionLabelText",
+                      "fill": "#FF3B30",
+                      "content": "VISION & GOAL",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "CFqZz",
+                  "name": "visionTitle",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": 800,
+                  "content": "世界で戦える選手を、\nこの地域から。",
+                  "lineHeight": 1.15,
+                  "textAlign": "center",
+                  "fontFamily": "Sora",
+                  "fontSize": 48,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "9vA5z",
+                  "name": "visionDesc",
+                  "fill": "#8A8A8A",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "中学校の部活動が地域クラブへ移行される今、世界レベルで活躍する選手を育成してきた経験とノウハウを次の世代へ繋げていく。それが倉敷トライアルアカデミーの使命です。",
+                  "lineHeight": 1.8,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jLoH5",
+              "name": "World Champion Photo",
+              "clip": true,
+              "width": "fill_container",
+              "height": 480,
+              "fill": "#1A1A1A",
+              "cornerRadius": 8,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KrWd1",
+                  "x": 0,
+                  "y": 0,
+                  "name": "photoBg",
+                  "width": 1200,
+                  "height": 480,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1772248456085.png",
+                    "mode": "fill"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "tg2ty",
+                  "x": 24,
+                  "y": 432,
+                  "name": "photoCaption",
+                  "fill": "#0C0C0CCC",
+                  "cornerRadius": 4,
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "wCr11",
+                      "name": "captionIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "trophy",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FF3B30"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZPKm6",
+                      "name": "captionText",
+                      "fill": "#FFFFFF",
+                      "content": "LUNAパークで育った選手が世界1位を獲得",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yIVM4",
+              "name": "Goal Steps",
+              "width": "fill_container",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Ff8IU",
+                  "name": "step1",
+                  "width": "fill_container",
+                  "fill": "#1A1A1A",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": {
+                      "top": 3
+                    },
+                    "fill": "#FF3B30"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    32,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "og3f0",
+                      "name": "step1Num",
+                      "fill": "#FF3B3040",
+                      "content": "01",
+                      "fontFamily": "Sora",
+                      "fontSize": 48,
+                      "fontWeight": "700",
+                      "letterSpacing": -2
+                    },
+                    {
+                      "type": "text",
+                      "id": "UPCxa",
+                      "name": "step1Title",
+                      "fill": "#FFFFFF",
+                      "content": "国内大会上位入賞",
+                      "textAlign": "center",
+                      "fontFamily": "Sora",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TMnc2",
+                      "name": "step1Desc",
+                      "fill": "#8A8A8A",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "基礎スキルを磨き、国内大会で上位入賞を目指す。確かな技術と競技力の土台を築く。",
+                      "lineHeight": 1.7,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eCTco",
+                  "name": "arrow1",
+                  "width": 48,
+                  "height": 160,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "w3bLD",
+                      "name": "arrow1Icon",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "chevron-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FF3B30"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IJ10U",
+                  "name": "step2",
+                  "width": "fill_container",
+                  "fill": "#1A1A1A",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": {
+                      "top": 3
+                    },
+                    "fill": "#FF3B30"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    32,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CF8E0",
+                      "name": "step2Num",
+                      "fill": "#FF3B3040",
+                      "content": "02",
+                      "fontFamily": "Sora",
+                      "fontSize": 48,
+                      "fontWeight": "700",
+                      "letterSpacing": -2
+                    },
+                    {
+                      "type": "text",
+                      "id": "z26cA",
+                      "name": "step2Title",
+                      "fill": "#FFFFFF",
+                      "content": "World Youth Games\n優勝",
+                      "textAlign": "center",
+                      "fontFamily": "Sora",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "K2tuy",
+                      "name": "step2Desc",
+                      "fill": "#8A8A8A",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "ユース世代の世界大会で頂点を掴む。国際舞台での経験が選手を大きく成長させる。",
+                      "lineHeight": 1.7,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oMDJ2",
+                  "name": "arrow2",
+                  "width": 48,
+                  "height": 160,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "LJ6Td",
+                      "name": "arrow2Icon",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "chevron-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FF3B30"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "9Bk1V",
+                  "name": "step3",
+                  "width": "fill_container",
+                  "fill": "#1A1A1A",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": {
+                      "top": 3
+                    },
+                    "fill": "#FF3B30"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    32,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8E0G4",
+                      "name": "step3Num",
+                      "fill": "#FF3B3040",
+                      "content": "03",
+                      "fontFamily": "Sora",
+                      "fontSize": 48,
+                      "fontWeight": "700",
+                      "letterSpacing": -2
+                    },
+                    {
+                      "type": "text",
+                      "id": "9nUjS",
+                      "name": "step3Title",
+                      "fill": "#FFFFFF",
+                      "content": "World Championship\n入賞",
+                      "textAlign": "center",
+                      "fontFamily": "Sora",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Y6wTr",
+                      "name": "step3Desc",
+                      "fill": "#8A8A8A",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "世界選手権での入賞を目指す。この地域から世界のトップへ挑戦する選手を輩出する。",
+                      "lineHeight": 1.7,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "99Fe9",
+          "name": "Programs Section",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "ED2CV",
+              "name": "programsHeader",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "1cX5Z",
+                  "name": "progLabel",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "7ODh6",
+                      "name": "progAccent",
+                      "fill": "#FF3B30",
+                      "width": 24,
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "OW7qO",
+                      "name": "progLabelText",
+                      "fill": "#FF3B30",
+                      "content": "COACHES & STAFF",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "46ctQ",
+                  "name": "progTitle",
+                  "fill": "#FFFFFF",
+                  "content": "経験豊富なスタッフ陣",
+                  "fontFamily": "Sora",
+                  "fontSize": 42,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "xqsCI",
+                  "name": "progDesc",
+                  "fill": "#8A8A8A",
+                  "content": "国内トップライダーの育成実績を持つコーチが、一人ひとりのレベルに合わせて丁寧に指導します",
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WFcWJ",
+              "name": "Cards Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "iuLcj",
+                  "name": "Coach Yokota",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#242424",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VjTkE",
+                      "name": "coach1Img",
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772246567995.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "1dDoL",
+                      "name": "coach1Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xVRgW",
+                          "name": "coach1Role",
+                          "fill": "#FF3B30",
+                          "content": "HEAD COACH",
+                          "fontFamily": "Inter",
+                          "fontSize": 9,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "OCvk7",
+                          "name": "coach1Name",
+                          "fill": "#FFFFFF",
+                          "content": "横田 知宏",
+                          "fontFamily": "Sora",
+                          "fontSize": 22,
+                          "fontWeight": "700",
+                          "letterSpacing": -0.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "dAIDw",
+                          "name": "coach1Desc",
+                          "fill": "#8A8A8A",
+                          "textGrowth": "fixed-width",
+                          "width": 330,
+                          "content": "国内トップライダーを育成し、世界戦でも活躍する選手を輩出した実績を持つ。的確な指導で初心者から上級者まで導く。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "5W11e",
+                  "name": "Coach Hamano",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#242424",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "7Zy9F",
+                      "name": "coach2Img",
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772246575249.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "so6OO",
+                      "name": "coach2Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WUPPH",
+                          "name": "coach2Role",
+                          "fill": "#FF3B30",
+                          "content": "COACH",
+                          "fontFamily": "Inter",
+                          "fontSize": 9,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "XEacH",
+                          "name": "coach2Name",
+                          "fill": "#FFFFFF",
+                          "content": "濱野 大樹",
+                          "fontFamily": "Sora",
+                          "fontSize": 22,
+                          "fontWeight": "700",
+                          "letterSpacing": -0.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "gFzZ8",
+                          "name": "coach2Desc",
+                          "fill": "#8A8A8A",
+                          "textGrowth": "fixed-width",
+                          "width": 330,
+                          "content": "参加者一人ひとりの習熟度に寄り添い、楽しみながら上達できる指導を実践。子どもたちの挑戦を全力でサポート。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4QCLg",
+                  "name": "Staff Namba",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#242424",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "f8kcv",
+                      "name": "coach3Img",
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1772246592573.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sUEon",
+                      "name": "coach3Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ARh9b",
+                          "name": "coach3Role",
+                          "fill": "#FF3B30",
+                          "content": "COURSE CONSTRUCTOR",
+                          "fontFamily": "Inter",
+                          "fontSize": 9,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "9m1hG",
+                          "name": "coach3Name",
+                          "fill": "#FFFFFF",
+                          "content": "難波 靖彦",
+                          "fontFamily": "Sora",
+                          "fontSize": 22,
+                          "fontWeight": "700",
+                          "letterSpacing": -0.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "jxZQP",
+                          "name": "coach3Desc",
+                          "fill": "#8A8A8A",
+                          "textGrowth": "fixed-width",
+                          "width": 330,
+                          "content": "セクション（コース）の設計・構築を担当。参加者のレベルに合わせた最適な練習環境を毎回作り上げる。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Dxqnp",
+          "name": "Why Choose Us",
+          "width": "fill_container",
+          "fill": "#0C0C0C",
+          "layout": "vertical",
+          "gap": 64,
+          "padding": [
+            100,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "CfHfS",
+              "name": "whyHeader",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "oXhjk",
+                  "name": "whyLabel",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "x5Nj1",
+                      "name": "whyAccent",
+                      "fill": "#FF3B30",
+                      "width": 24,
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "9fGIR",
+                      "name": "whyLabelText",
+                      "fill": "#FF3B30",
+                      "content": "DETAILS",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "uFXiZ",
+                  "name": "whyTitle",
+                  "fill": "#FFFFFF",
+                  "content": "参加要項",
+                  "fontFamily": "Sora",
+                  "fontSize": 42,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "5oNQd",
+              "name": "Features Grid",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Jiq25",
+                  "name": "fcard1",
+                  "width": "fill_container",
+                  "fill": "#1A1A1A",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#2A2A2A"
+                  },
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nXzYi",
+                      "name": "fcard1IconWrap",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "#FF3B3020",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "GNiU8",
+                          "name": "fcard1Icon",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "map-pin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FF3B30"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "U7O6V",
+                      "name": "fcard1Title",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "会場",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Sora",
+                      "fontSize": 20,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "OQ8Yw",
+                      "name": "fcard1Desc",
+                      "fill": "#8A8A8A",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "倉敷市福田 LUNAパーク\nトイレ・駐車場完備。倉敷・水島エリアからアクセス良好。",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "l5dLZ",
+                  "name": "fcard2",
+                  "width": "fill_container",
+                  "fill": "#1A1A1A",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#2A2A2A"
+                  },
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "bDpw8",
+                      "name": "fcard2IconWrap",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "#FF3B3020",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "6RWdO",
+                          "name": "fcard2Icon",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "shield",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FF3B30"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "QaIYw",
+                      "name": "fcard2Title",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "持ち物・\n注意事項",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Sora",
+                      "fontSize": 20,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "5pylT",
+                      "name": "fcard2Desc",
+                      "fill": "#8A8A8A",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "ヘルメット・グローブは各自持参。競技用自転車はレンタルあり（数に限りあり）。スポーツ保険は未加入のため、各自でご対応ください。",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q2MRP",
+                  "name": "fcard3",
+                  "width": "fill_container",
+                  "fill": "#1A1A1A",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#2A2A2A"
+                  },
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "4nZLs",
+                      "name": "fcard3IconWrap",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "#FF3B3020",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "8PvKW",
+                          "name": "fcard3Icon",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "user",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FF3B30"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "hg1jB",
+                      "name": "fcard3Title",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "対象・\n参加条件",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Sora",
+                      "fontSize": 20,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "amIeE",
+                      "name": "fcard3Desc",
+                      "fill": "#8A8A8A",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "倉敷・水島市ほか近隣地域の小学生〜高校生。初心者大歓迎。中学生以下は保護者同伴が必要です。",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "S42Ay",
+          "name": "Access Section",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "WqfxB",
+              "name": "accessHeader",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "eH9XI",
+                  "name": "accessLabelRow",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "Jwv6n",
+                      "name": "accessAccent",
+                      "fill": "#FF3B30",
+                      "width": 24,
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "bWJBy",
+                      "name": "accessLabelText",
+                      "fill": "#FF3B30",
+                      "content": "ACCESS",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "QXYYQ",
+                  "name": "accessTitle",
+                  "fill": "#FFFFFF",
+                  "content": "アクセス",
+                  "fontFamily": "Sora",
+                  "fontSize": 42,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dhEJT",
+              "name": "accessBody",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "85pPU",
+                  "name": "Map",
+                  "clip": true,
+                  "width": 700,
+                  "height": 400,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1772247380840.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#2A2A2A"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "hrrSj",
+                  "name": "accessInfo",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "AB1Nr",
+                      "name": "venueBlock",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rk0cC",
+                          "name": "venueLabel",
+                          "fill": "#FF3B30",
+                          "content": "VENUE",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "700",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "8mewc",
+                          "name": "venueName",
+                          "fill": "#FFFFFF",
+                          "content": "LUNAパーク",
+                          "fontFamily": "Sora",
+                          "fontSize": 24,
+                          "fontWeight": "700",
+                          "letterSpacing": -0.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "SvpTK",
+                          "name": "venueAddr",
+                          "fill": "#8A8A8A",
+                          "content": "岡山県倉敷市福田町",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 15
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MBieq",
+                      "name": "facilityBlock",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "T5X0B",
+                          "name": "facilityLabel",
+                          "fill": "#FF3B30",
+                          "content": "FACILITIES",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "700",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "FawlB",
+                          "name": "facilityRow1",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "1SW06",
+                              "name": "facilityIcon1",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "car",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            },
+                            {
+                              "type": "text",
+                              "id": "TlTyb",
+                              "name": "facilityText1",
+                              "fill": "#FFFFFF",
+                              "content": "駐車場あり",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "2vYwK",
+                          "name": "facilityRow2",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "iWb3u",
+                              "name": "facilityIcon2",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "bath",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            },
+                            {
+                              "type": "text",
+                              "id": "2hS8E",
+                              "name": "facilityText2",
+                              "fill": "#FFFFFF",
+                              "content": "トイレあり",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uuNO6",
+                      "name": "noteBlock",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FYhVf",
+                          "name": "noteLabel",
+                          "fill": "#FF3B30",
+                          "content": "NOTE",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "700",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "zbsPk",
+                          "name": "noteText",
+                          "fill": "#8A8A8A",
+                          "textGrowth": "fixed-width",
+                          "width": 280,
+                          "content": "開催日は毎月第3日曜ですが、\n月によって変動する場合があります。\n最新情報はFacebookグループで\nご確認ください。",
+                          "lineHeight": 1.7,
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "9lofB",
+                      "name": "mapBtn",
+                      "fill": "transparent",
+                      "cornerRadius": 4,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#FFFFFF33"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        14,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "f6KzB",
+                          "name": "mapBtnIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "map",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QWpV8",
+                          "name": "mapBtnText",
+                          "fill": "#FFFFFF",
+                          "content": "Googleマップで見る",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Kogoo",
+          "name": "CTA Section",
+          "clip": true,
+          "width": "fill_container",
+          "height": 500,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ufQ9O",
+              "x": 0,
+              "y": 0,
+              "name": "ctaBgImg",
+              "metadata": {
+                "type": "unsplash",
+                "username": "jwknopf",
+                "link": "https://unsplash.com/@jwknopf",
+                "author": "John Nupp"
+              },
+              "width": 1440,
+              "height": 500,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1772246621671.png",
+                "mode": "fill"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "UeNk9",
+              "x": 0,
+              "y": 0,
+              "name": "ctaOverlay",
+              "width": 1440,
+              "height": 500,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#0C0C0CF0",
+                    "position": 0
+                  },
+                  {
+                    "color": "#FF3B3040",
+                    "position": 0.5
+                  },
+                  {
+                    "color": "#0C0C0CF0",
+                    "position": 1
+                  }
+                ]
+              }
+            },
+            {
+              "type": "frame",
+              "id": "1KvNO",
+              "x": 0,
+              "y": 0,
+              "name": "ctaContent",
+              "width": 1440,
+              "height": 500,
+              "layout": "vertical",
+              "gap": 32,
+              "padding": [
+                0,
+                120
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "FULZn",
+                  "name": "ctaAccentLine",
+                  "fill": "#FF3B30",
+                  "width": 60,
+                  "height": 3
+                },
+                {
+                  "type": "text",
+                  "id": "aMQoJ",
+                  "name": "ctaTitle",
+                  "fill": "#FFFFFF",
+                  "content": "まずは、やってみよう。",
+                  "fontFamily": "Sora",
+                  "fontSize": 52,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "kb344",
+                  "name": "ctaSubtitle",
+                  "fill": "#FFFFFFCC",
+                  "textGrowth": "fixed-width",
+                  "width": 500,
+                  "content": "自転車に乗れれば誰でも参加OK。\n毎月第3日曜 10:00〜15:00 / 参加費 ¥1,000",
+                  "lineHeight": 1.7,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                },
+                {
+                  "type": "frame",
+                  "id": "jFwo0",
+                  "name": "ctaButtons",
+                  "gap": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "7YNzL",
+                      "name": "ctaMainBtn",
+                      "fill": "#FF3B30",
+                      "cornerRadius": 4,
+                      "gap": 12,
+                      "padding": [
+                        20,
+                        48
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NLNow",
+                          "name": "ctaMainBtnText",
+                          "fill": "#FFFFFF",
+                          "content": "Googleフォームで申込",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "mlEUY",
+                          "name": "ctaMainBtnIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "arrow-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "V6AAx",
+                      "name": "ctaLineBtn",
+                      "fill": "#1877F2",
+                      "cornerRadius": 4,
+                      "gap": 10,
+                      "padding": [
+                        20,
+                        48
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "srt3V",
+                          "name": "ctaLineBtnText",
+                          "fill": "#FFFFFF",
+                          "content": "Facebookで連絡",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "4CbKe",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#0C0C0C",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#2A2A2A"
+          },
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            60,
+            120,
+            40,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "tkjEo",
+              "name": "footerTop",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "7oRT5",
+                  "name": "footerBrand",
+                  "width": 350,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "hNuCA",
+                      "name": "footerLogoRow",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "5rsMf",
+                          "name": "footerLogoMark",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "#FF3B30",
+                          "cornerRadius": 4,
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "qBPcI",
+                              "name": "footerLogoIcon",
+                              "width": 18,
+                              "height": 18,
+                              "iconFontName": "zap",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "tbC5X",
+                          "name": "footerLogoText",
+                          "fill": "#FFFFFF",
+                          "content": "KURASHIKI TRIAL ACADEMY",
+                          "fontFamily": "Sora",
+                          "fontSize": 14,
+                          "fontWeight": "700",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "jL3O7",
+                      "name": "footerTagline",
+                      "fill": "#525252",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "自転車トライアルを通じて、\n子どもたちの挑戦する力を育む。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "p206m",
+                  "name": "footerNav2",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "G1UKL",
+                      "name": "footerNav2Title",
+                      "fill": "#FFFFFF",
+                      "content": "INFO",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "Tefu8",
+                      "name": "footerNav2a",
+                      "fill": "#8A8A8A",
+                      "content": "毎月第3日曜 10:00–15:00",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "eSXTs",
+                      "name": "footerNav2b",
+                      "fill": "#8A8A8A",
+                      "content": "LUNAパーク（倉敷市福田町）",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "QDtyO",
+                      "name": "footerNav2c",
+                      "fill": "#8A8A8A",
+                      "content": "参加費 ¥1,000",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PSxt5",
+                  "name": "footerNav3",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EhT20",
+                      "name": "footerNav3Title",
+                      "fill": "#FFFFFF",
+                      "content": "CONTACT",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "CTyto",
+                      "name": "footerNav3a",
+                      "fill": "#8A8A8A",
+                      "content": "Googleフォームで申込",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "vL2pA",
+                      "name": "footerNav3b",
+                      "fill": "#8A8A8A",
+                      "content": "Facebookグループ",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "y8ss7",
+              "name": "footerDivider",
+              "fill": "#2A2A2A",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "FRMpy",
+              "name": "footerBottom",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iQdFQ",
+                  "name": "footerCopy",
+                  "fill": "#525252",
+                  "content": "© 2026 Kurashiki Trial Academy. All rights reserved.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "sfXqw",
+                  "name": "footerSocials",
+                  "gap": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "HCW2G",
+                      "name": "socialIG",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "facebook",
+                      "iconFontFamily": "lucide",
+                      "fill": "#525252"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "2yXId",
+                      "name": "socialX",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "instagram",
+                      "iconFontFamily": "lucide",
+                      "fill": "#525252"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

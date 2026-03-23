@@ -270,6 +270,14 @@
         letter-spacing: 2px;
         color: var(--text-secondary);
       }
+      .info-fee-note {
+        font-size: 10px;
+        color: var(--text-muted);
+        text-align: center;
+        padding: 0 var(--px) 12px;
+        background: var(--bg-card);
+        line-height: 1.6;
+      }
       .info-divider {
         width: 1px;
         height: 40px;
@@ -559,9 +567,11 @@
         display: flex;
         gap: 24px;
         width: 100%;
+        flex-wrap: wrap;
       }
       .detail-card {
-        flex: 1;
+        flex: 1 1 calc(50% - 12px);
+        min-width: 260px;
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -569,7 +579,6 @@
         background: var(--bg-card);
         border-radius: 8px;
         border: 1px solid var(--border);
-        min-width: 0;
       }
       .detail-card-head {
         display: flex;
@@ -1026,6 +1035,9 @@
           flex-direction: column;
           gap: 16px;
         }
+        .detail-card {
+          flex: 1 1 100%;
+        }
         .access-body {
           flex-direction: column;
         }
@@ -1304,6 +1316,16 @@
             </div>
             <p class="detail-desc">
               倉敷・水島市ほか近隣地域の小学生〜高校生。初心者大歓迎。中学生以下は保護者同伴が必要です。
+            </p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-card-head">
+              <div class="detail-icon-wrap"><i data-lucide="coins"></i></div>
+              <h3 class="detail-title">参加費について</h3>
+            </div>
+            <p class="detail-desc">
+              参加費は1回
+              ¥1,000です。コーチはボランティアで運営しており、参加費は施設の維持・管理および活動のために使用されます。
             </p>
           </div>
         </div>
